@@ -31,7 +31,7 @@ def check_password_strength(password):
     else:
         remarks.append("Add numbers.")
 
-    if re.search(r"[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]", password):
+    if re.search(r"[!@#$%^&*()_+\-={};':\"\\|,.<>/?]", password):
         strength += 1
     else:
         remarks.append("Add special characters.")
